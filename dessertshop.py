@@ -61,7 +61,7 @@ def main():
 
     listed.append(["Order Subtotals: ", round(sub_total, 2), round(tax, 2)])
     listed.append(["Order Total:", "", round(total_cost, 2)])
-    listed.append(["","", total_number_of_items_in_the_order])
+    listed.append(["Total items in the order: ","", total_number_of_items_in_the_order])
 
     make_receipt(listed, "receipt")
 

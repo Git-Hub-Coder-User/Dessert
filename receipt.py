@@ -31,7 +31,7 @@ def make_receipt(DATA, out_filename):
     style = TableStyle( 
         [ 
             ( "BOX" , ( 0, 0 ), ( -1, -1 ), 1 , colors.black ), 
-            ( "GRID" , ( 0, 0 ), ( 5 , 6 ), 1 , colors.black ), 
+            ( "GRID" , ( 0, 0 ), ( 4 , 5 ), 1 , colors.black ), 
             ( "BACKGROUND" , ( 0, 0 ), ( 3, 0 ), colors.beige ), 
             ( "TEXTCOLOR" , ( 0, 0 ), ( -1, 0 ), colors.black ), 
             ( "ALIGN" , ( 0, 0 ), ( -1, -1 ), "CENTER" ), 
@@ -45,5 +45,3 @@ def make_receipt(DATA, out_filename):
     # final step which builds the 
     # actual pdf putting together all the elements 
     pdf.build([title , table ]) 
-
-make_receipt([["chocolate chip cookie", 4, 4.5], ["vanilla ice cream", 2, 2.5]], "receipt.pdf")

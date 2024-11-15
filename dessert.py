@@ -15,6 +15,7 @@ class DessertItem(ABC):
     def get_list(self):
         return []
     
+    @abstractmethod
     def calculate_cost(self):
         return 0 
     
