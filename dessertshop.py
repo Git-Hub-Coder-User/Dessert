@@ -7,7 +7,7 @@ from dessert import(
 )
 from receipt import make_receipt
 
-class Order():
+class Order:
     def __init__(self):
         self.order = []
 
@@ -36,6 +36,10 @@ class Order():
             tax += item.calculate_tax()
         return tax
 
+class DessertStop:
+    def __init__():
+        pass
+    
 def main():
     listed = []
     sub_total = 0

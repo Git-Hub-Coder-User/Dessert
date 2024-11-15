@@ -31,7 +31,7 @@ def make_receipt(DATA, out_filename):
     style = TableStyle( 
         [ 
             ( "BOX" , ( 0, 0 ), ( -1, -1 ), 1 , colors.black ), 
-            ( "GRID" , ( 0, 0 ), ( 4 , 5 ), 1 , colors.black ), 
+            ( "GRID" , ( 0, 0 ), ( 4 , len(DATA) - 3), 1 , colors.black ), 
             ( "BACKGROUND" , ( 0, 0 ), ( 3, 0 ), colors.beige ), 
             ( "TEXTCOLOR" , ( 0, 0 ), ( -1, 0 ), colors.black ), 
             ( "ALIGN" , ( 0, 0 ), ( -1, -1 ), "CENTER" ), 
