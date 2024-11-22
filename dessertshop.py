@@ -1,3 +1,6 @@
+#"We'll burn that bridge when we get there" - LaRose
+#"It's not because I'm avoiding it" - LaRose
+#"Are you? " - LaRose
 from dessert import(
     DessertItem,
     Candy,
@@ -150,7 +153,7 @@ def main():
     listed.append(["Total items in the order: ","", total_number_of_items_in_the_order])
 
 
-    
+    print(order)
     make_receipt(listed, "receipt")
 
 

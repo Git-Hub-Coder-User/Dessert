@@ -30,6 +30,9 @@ class Candy(DessertItem):
         self.candy_weight = candy_weight
         self.price_per_pound = price_per_pound
     
+    def __str__(self):
+        return f"{self.name}, {self.candy_weight}lbs, ${self.price_per_pound}/lb, {self.calculate_cost()}, {self.calculate_tax()}"
+    
     def get_list(self):
         # print("CALLED")
         return [self.name, self.candy_weight, self.price_per_pound]
@@ -44,6 +47,9 @@ class Cookie(DessertItem):
         super().__init__(name)
         self.quantity = quantity
         self.price_per_dozen = price_per_dozen
+            
+    def __str__(self):
+        return f"{self.name}, {self.quantity}cookies, ${self.price_per_dozen}/dozen, {self.calculate_cost()}, {self.calculate_tax()}"
 
     def get_list(self):
         return [self.name, self.quantity, self.price_per_dozen]
@@ -57,6 +63,9 @@ class IceCream(DessertItem):
         super().__init__(name)
         self.scoop_count = scoop_count
         self.price_per_scoop = price_per_scoop
+            
+    def __str__(self):
+        return f"{self.name}, {self.scoop_count}lbs, ${self.price_per_pound}/lb, {self.calculate_cost()}, {self.calculate_tax()}"
         
     def get_list(self):
         return [self.name, self.scoop_count, self.price_per_scoop]
